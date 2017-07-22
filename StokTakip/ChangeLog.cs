@@ -9,8 +9,10 @@ namespace StokTakip
     [Table("ChangeLog")]
     public partial class ChangeLog
     {
+        
+        [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
-
+        
         [StringLength(100)]
         public string EntityName { get; set; }
 
