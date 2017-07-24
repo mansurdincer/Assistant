@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98BA86BC-9F32-411D-8219-74D21EA60818}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assistant</RootNamespace>
+    <AssemblyName>Assistant</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.2" />
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Proje\StokTakip\StokTakip\bin\Debug\DevExpress.Data.v16.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.2" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Proje\StokTakip\StokTakip\bin\Debug\DevExpress.XtraBars.v16.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Proje\StokTakip\StokTakip\bin\Debug\DevExpress.XtraEditors.v16.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Proje\StokTakip\StokTakip\bin\Debug\DevExpress.XtraGrid.v16.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DegisimLogFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DegisimLogFormu.Designer.cs">
+      <DependentUpon>DegisimLogFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HareketTip.cs" />
+    <Compile Include="HareketTipFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HareketTipFormu.Designer.cs">
+      <DependentUpon>HareketTipFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokBirimFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokBirimFormu.designer.cs">
+      <DependentUpon>StokBirimFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DegisimLog.cs" />
+    <Compile Include="Depo.cs" />
+    <Compile Include="DepoFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepoFormu.designer.cs">
+      <DependentUpon>DepoFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepoTur.cs" />
+    <Compile Include="DepoTurFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepoTurFormu.designer.cs">
+      <DependentUpon>DepoTurFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisFormu.designer.cs">
+      <DependentUpon>GirisFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HareketYon.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SatinAlma.cs" />
+    <Compile Include="Stok.cs" />
+    <Compile Include="StokBirim.cs" />
+    <Compile Include="AssistantEntities.cs" />
+    <Compile Include="AssistantInitializer.cs" />
+    <Compile Include="StokDepo.cs" />
+    <Compile Include="StokDepoFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokDepoFormu.Designer.cs">
+      <DependentUpon>StokDepoFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokFormu.Designer.cs">
+      <DependentUpon>StokFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokGrup.cs" />
+    <Compile Include="StokGrupFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokGrupFormu.Designer.cs">
+      <DependentUpon>StokGrupFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokHareket.cs" />
+    <Compile Include="StokHareketFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokHareketFormu.Designer.cs">
+      <DependentUpon>StokHareketFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokTalep.cs" />
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DegisimLogFormu.resx">
+      <DependentUpon>DegisimLogFormu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HareketTipFormu.resx">
+      <DependentUpon>HareketTipFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokBirimFormu.resx">
+      <DependentUpon>StokBirimFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepoFormu.resx">
+      <DependentUpon>DepoFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepoTurFormu.resx">
+      <DependentUpon>DepoTurFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisFormu.resx">
+      <DependentUpon>GirisFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StokDepoFormu.resx">
+      <DependentUpon>StokDepoFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokFormu.resx">
+      <DependentUpon>StokFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokGrupFormu.resx">
+      <DependentUpon>StokGrupFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokHareketFormu.resx">
+      <DependentUpon>StokHareketFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
