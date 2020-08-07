@@ -3,13 +3,19 @@
   <Profiles />
   <Settings>
     <Setting Name="Kullanici" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Mansur</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Sifre" Type="System.String" Scope="User">
-      <Value Profile="(Default)">050913</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="ApplicationSkinName" Type="System.String" Scope="User">
       <Value Profile="(Default)">Metropolis</Value>
+    </Setting>
+    <Setting Name="Departman" Type="System.String" Scope="User">
+      <Value Profile="(Default)">IT</Value>
+    </Setting>
+    <Setting Name="YedekKonumu" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

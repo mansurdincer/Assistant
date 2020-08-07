@@ -25,7 +25,7 @@ namespace Assistant.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Mansur")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Kullanici {
             get {
                 return ((string)(this["Kullanici"]));
@@ -37,7 +37,7 @@ namespace Assistant.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("050913")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Sifre {
             get {
                 return ((string)(this["Sifre"]));
@@ -56,6 +56,30 @@ namespace Assistant.Properties {
             }
             set {
                 this["ApplicationSkinName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("IT")]
+        public string Departman {
+            get {
+                return ((string)(this["Departman"]));
+            }
+            set {
+                this["Departman"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string YedekKonumu {
+            get {
+                return ((string)(this["YedekKonumu"]));
+            }
+            set {
+                this["YedekKonumu"] = value;
             }
         }
     }

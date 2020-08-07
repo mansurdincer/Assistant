@@ -1,6 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Globalization;
+using System.Threading;
 using System.Windows.Forms;
+using Assistant.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
@@ -17,6 +19,7 @@ namespace Assistant
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("tr-tr");
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
