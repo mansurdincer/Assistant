@@ -9,7 +9,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="ApplicationSkinName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Metropolis</Value>
+      <Value Profile="(Default)">WXI</Value>
     </Setting>
     <Setting Name="Departman" Type="System.String" Scope="User">
       <Value Profile="(Default)">IT</Value>

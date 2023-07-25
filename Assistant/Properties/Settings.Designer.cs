@@ -49,7 +49,7 @@ namespace Assistant.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Metropolis")]
+        [global::System.Configuration.DefaultSettingValueAttribute("WXI")]
         public string ApplicationSkinName {
             get {
                 return ((string)(this["ApplicationSkinName"]));
